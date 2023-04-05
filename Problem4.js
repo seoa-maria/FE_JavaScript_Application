@@ -5,8 +5,12 @@ let user = {
   years: 23,
 };
 
+console.log(user.Name);
+
 // 아래에 코드를 작성해주세요 ~
 
-alert(Name); // "지환"
-alert(age); // 23
-alert(isAdmin); // false
+let { Name: name, years: age, isAdmin } = user;
+
+alert(name);
+alert(age);
+alert(isAdmin ? isAdmin : false);

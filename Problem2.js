@@ -8,3 +8,13 @@ let lionMoney = {
   주용: 2800,
   맑음: 50000,
 };
+
+let sum = 0;
+
+for (let key in lionMoney) {
+  sum += lionMoney[key];
+}
+
+if (typeof window !== "undefined") {
+  alert(sum); // "" 글자 , 그냥은 변수/ 변수값 출력
+}
